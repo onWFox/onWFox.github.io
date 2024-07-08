@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Резюме Санька для алтушки</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Александр для алтушки</h1>
+      <img class="hero" src="./SKYF.PNG" alt="" />
+      <ul class="">
+        <li>Имя: <span class="value__user">Санчез</span></li>
+        <li>Возраст: <span class="value__user">20 лет</span> </li>
+        <li>Семейное положение: <span class="value__user">холост</span>  </li>
+        <li>Заработок: <span class="value__user">только для тебя, моя алтушка</span></li>
+      </ul>
+
+      <button class="button__sanek" id="incrementButton">Связаться со скуфом</button>
+      <p>
+        Статус: <span id="counter"><b> Саня спит</b></span>
+      </p>
+
+      <script>
+        let count = 1;
+        let conunt2 = 0;
+        // Получение элементов кнопки и элемента для отображения счетчика
+        const button = document.getElementById("incrementButton");
+        const counterDisplay = document.getElementById("counter");
+
+        // Добавление обработчика события для нажатия кнопки
+        button.addEventListener("click", () => {
+          conunt2++;
+          if (conunt2 <= 1) {
+            counterDisplay.textContent = " Саня уже выехал к тебе ";
+            counterDisplay.style.fontWeight = "bold";
+            counterDisplay.style.color = "blue";
+          } else if (conunt2 <= 7) {
+            counterDisplay.textContent = " Жди меня моя амазонка";
+            counterDisplay.style.fontWeight = "bold";
+          } else {
+            counterDisplay.textContent = " Саня уже у твоей двери. В постель!";
+            counterDisplay.style.fontWeight = "bold";
+            counterDisplay.style.color = "red";
+            
+          }
+          
+        });
+      </script>
+    </div>
+  </body>
+</html>

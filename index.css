@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(./B.jpg);
+    background-repeat: round;
+    
+}
+.hero{
+    width: 300px;
+    border: 3px solid rgb(222, 24, 24);
+    border-radius: 1rem;
+    box-shadow: 0 0 8px rgb(150, 60, 3);
+}
+.value__user{
+    color: black;
+    font-weight: 600;
+}
+.button__sanek{
+    font-size: 18px;
+    background-color: rgb(47, 161, 2);
+    border: none;
+    border-radius: 1rem;
+    color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    transition: 0.8s ease;
+}
+.button__sanek:hover{
+    color: antiquewhite;
+    text-shadow: 0 0 4px;
+    border: 1px solid antiquewhite;
+    box-shadow: 0 0 4px 4px  rgb(224, 11, 11);;
+    border-radius: 2rem;
+    background-color: rgb(47, 161, 2);
+    width: 200px;
+    padding: 5px;
+}
+li{
+    color: rgb(255, 1, 60)
+}
+.header{
+    color: rgb(255, 1, 60)
+}
